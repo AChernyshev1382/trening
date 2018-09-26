@@ -30,9 +30,4 @@ public class Results {
         this.flag = flag;
     }
 
-    public void setRes(boolean b) {
-    }
-
-    public void setRes(String div) {
-    }
 }
