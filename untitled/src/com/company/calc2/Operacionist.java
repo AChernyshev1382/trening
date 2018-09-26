@@ -5,7 +5,7 @@ public class Operacionist {
     //объявляем переменные
     private double x;
     private double y;
-    private double res;
+    private Results res;
 
 
     //создаем сеттеры
@@ -17,9 +17,7 @@ public class Operacionist {
         this.y = y;
     }
 
-    public void setRes(double res) {
-        this.res = res;
-    }
+
 
     //создаем геттеры
 
@@ -31,9 +29,6 @@ public class Operacionist {
         return y;
     }
 
-    public double getRes() {
-        return res;
-    }
 
     //конструктор
 
@@ -47,18 +42,39 @@ public class Operacionist {
     public Operacionist() {
         this.x = 0;
         this.y = 0;
-        this.res = 0;
+        this.res = new Results();
     }
 
     // метод сложения
-    public double getSum() {
-        this.res = x + y;
+    public Results getSum() {
+        doCalc(x + y);
+        return res;
+    }
+
+    private void doCalc(double v) {
+        res.setRes(v);
+        res.setRes(true);
+        res.setRes("DIV");
+    }
+
+    public Results getDiv(){
+
+        if (y==0){
+            res.setRes(-1);
+            res.setRes(false);
+            res.setRes("DIV");
+        }
+        else {
+            res.setRes(x/y);
+            res.setRes(true);
+            res.setRes("DIV");
+        }
         return res;
     }
 
     //
     public double getDiv(){
-        this.res = x
+        return -1;
     }
 
 
