@@ -2,9 +2,19 @@ package giftbox;
 
 public class Sweets {
 
-    double price;
-    double weight;
-    String uniqProperty;
+    private double price;
+    private double weight;
+    private String neme;
+
+    public Sweets(double price, double weight, String neme) {
+        this.price = price;
+        this.weight = weight;
+        this.neme = neme;
+    }
+
+    public String getNeme() {
+        return neme;
+    }
 
     public double getPrice() {
         return price;
@@ -14,19 +24,15 @@ public class Sweets {
         return weight;
     }
 
-    public String getUniqProperty() {
-        return uniqProperty;
+    void printСompositionGift(){
+
+        System.out.println("Вес: " + getWeight());
+        System.out.println("Цена: " + getPrice());
+        System.out.println("Название подарка: " +getNeme());
+
     }
 
-    public void setPrice(double price) {
-        this.price = price;
-    }
 
-    public void setWeight(double weight) {
-        this.weight = weight;
-    }
 
-    public void setUniqProperty(String uniqProperty) {
-        this.uniqProperty = uniqProperty;
-    }
+
 }
