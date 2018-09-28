@@ -21,11 +21,11 @@ public class Operacionist {
 
     //создаем геттеры
 
-    public double getX() {
+    public double getX(int i) {
         return x;
     }
 
-    public double getY() {
+    public double getY(int i) {
         return y;
     }
 
