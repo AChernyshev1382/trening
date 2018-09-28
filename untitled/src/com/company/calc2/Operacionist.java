@@ -73,9 +73,9 @@ public class Operacionist {
     }
 
     //
-    public double getDiv(){
-        return -1;
-    }
+    //public double getDiv(){
+    //    return -1;
+    //}
 
 
 
